@@ -29,6 +29,7 @@ http://localhost:4200
 
 Estrutura do Projeto:
 
+```
 src/
 ├── index.html                      # Arquivo HTML principal
 ├── main.ts                         # Ponto de entrada da aplicação
@@ -63,11 +64,16 @@ src/
 │   │   └── services/           # Serviços da aplicação (ex: integração com backend)
 │   │       ├── newsletter.service.ts
 │   │       └── newsletter.service.spec.ts
+```
 
+Componentes:
 
-Componentes
 btn-primary: botão estilizado reutilizável
+
 header: cabeçalho da página
+
 home: conteúdo principal da landing page
+
 newsletter-form: formulário para inscrição na newsletter
+
 newsletter.service: serviço para integração com backend
