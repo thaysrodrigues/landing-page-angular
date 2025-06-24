@@ -1,59 +1,73 @@
-# LandingPage
+# Landing Page - Angular
+Projeto desenvolvido com Angular v20.19.3
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+## Recursos
 
-## Development server
+Este projeto foi desenvolvido com base em práticas recomendadas para a criação de landing pages utilizando Angular:
 
-To start a local development server, run:
+- [Criando Landing Page do Zero com Angular 17](https://www.youtube.com/watch?v=O26fDEnAukY)
 
-```bash
+## Tecnologias utilizadas e requisitos:
+- Angular 20.19.3
+- Node.js 20.19.3
+- npm 10.8.2
+- SCSS
+- Typescript
+
+## Instalação
+
+Instale as dependências:
+```bash 
+npm install 
+```
+
+Execute o servidor de desenvolvimento:
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse a aplicação no navegador:
+http://localhost:4200
 
-## Code scaffolding
+Estrutura do Projeto:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/
+├── index.html                      # Arquivo HTML principal
+├── main.ts                         # Ponto de entrada da aplicação
+├── main.server.ts                  # Renderização do lado servidor (SSR)
+├── server.ts                       # Servidor Angular Universal
+├── app/
+│   ├── app.ts                      # Componente principal da aplicação
+│   ├── app.routes.ts               # Configurações de rotas
+│   ├── app.config.ts               # Configurações gerais da aplicação
+│   ├── color-variables.scss        # Variáveis globais de estilo (cores)
+│   ├── components/                 # Componentes reutilizáveis da aplicação
+│   │   ├── btn-primary/            # Botão estilizado reutilizável
+│   │   │   ├── btn-primary.html
+│   │   │   ├── btn-primary.scss
+│   │   │   ├── btn-primary.spec.ts
+│   │   │   └── btn-primary.ts
+│   │   ├── header/                 # Cabeçalho da página
+│   │   │   ├── header.html
+│   │   │   ├── header.scss
+│   │   │   ├── header.spec.ts
+│   │   │   └── header.ts
+│   │   ├── home/                   # Conteúdo principal da landing page
+│   │   │   ├── home.html
+│   │   │   ├── home.scss
+│   │   │   ├── home.spec.ts
+│   │   │   └── home.ts
+│   │   ├── newsletter-form/        # Formulário para inscrição na newsletter
+│   │   │   ├── newsletter-form.html
+│   │   │   ├── newsletter-form.scss
+│   │   │   ├── newsletter-form.spec.ts
+│   │   │   └── newsletter-form.ts
+│   │   └── services/           # Serviços da aplicação (ex: integração com backend)
+│   │       ├── newsletter.service.ts
+│   │       └── newsletter.service.spec.ts
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Componentes
+btn-primary: botão estilizado reutilizável
+header: cabeçalho da página
+home: conteúdo principal da landing page
+newsletter-form: formulário para inscrição na newsletter
+newsletter.service: serviço para integração com backend
